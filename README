@@ -1,0 +1,44 @@
+README
+
+1. Install anaconda
+wget https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
+
+sh Anaconda3-2024.10-1-Linux-x86_64.sh
+
+2. Edit .profile
+Add Anaconda to PATH environment variable as below,
+PATH=.:$PATH:~/anaconda3/bin
+
+
+3. Run Anaconda
+source ~/anaconda3/bin/activate
+
+4. Get source from github
+git clone https://github.com/mlinkall/album.git
+
+5. Start the server
+python album.py
+below messages are shown in the console,
+
+d@d-VirtualBox:~/web/album$ python album.py 
+ * Serving Flask app 'album'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.112:8080
+Press CTRL+C to quit
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+
+The server address is http://192.168.0.112:8080 and you can navigate it using this address.
+
+
+6. Navigate from a cell phone
+Open web browser of a cell phone
+http://192.168.0.112:8080
+
+click "Choose Files" and "upload files", the files such as image and video can be found under the PC folder "uploads"
+
+
+
