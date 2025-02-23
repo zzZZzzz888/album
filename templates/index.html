@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devicewidth, initialscale=1.0">
+    <title>Upload Files from Mobile Phone to PC</title>
+    <style>
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            select,
+            textarea,
+                input {
+            font-size:50px !important;
+                }
+            }
+    </style>
+</head>
+<body>
+    <h1>Please select files and upload to ther server</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file[]" style="width:1000px;height:100px" multiple /> <br />
+    <input type="submit" value="upload files" />
+    </form>
+</body>
+</html>
