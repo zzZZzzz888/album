@@ -20,7 +20,7 @@ git clone https://github.com/mlinkall/album.git
 python album.py
 below messages are shown in the console,
 
-d@d-VirtualBox:~/web/album$ python album.py 
+album$ python album.py 
  * Serving Flask app 'album'
  * Debug mode: on
 WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
