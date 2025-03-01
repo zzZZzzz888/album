@@ -1,17 +1,32 @@
-README
 
-1. Install anaconda
+1. What is Album Synchronization
+Cloud and social software cannot gurantee the file exchange security. We can upload files from your cell phone browser such as iPhone safari and Android to laptop if the program is running on your personal computer via WiFi.
+
+2. Architecture
+WEB Browser + Python Flask
+
+3. Install anaconda
+3.1 Ubuntu
+3.2.1 download
 wget https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
 
 sh Anaconda3-2024.10-1-Linux-x86_64.sh
 
-2. Edit .profile
+3.2.2 set environment
+Edit .profile
 Add Anaconda to PATH environment variable as below,
 PATH=.:$PATH:~/anaconda3/bin
 
 
-3. Run Anaconda
+3.2.3 Run Anaconda
 source ~/anaconda3/bin/activate
+
+3.2 Windows
+click https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Windows-x86_64.exe and install it
+
+for windows 7
+click https://repo.anaconda.com/archive/Anaconda3-2019.10-Windows-x86_64.exe and install it
+
 
 4. Get source from github
 git clone https://github.com/mlinkall/album.git
@@ -20,6 +35,7 @@ git clone https://github.com/mlinkall/album.git
 python album.py
 below messages are shown in the console,
 
+5.1 Ubuntu
 album$ python album.py 
  * Serving Flask app 'album'
  * Debug mode: on
@@ -33,6 +49,12 @@ Press CTRL+C to quit
 
 The server address is http://192.168.0.112:8080 and you can navigate it using this address.
 
+5.2 Windows
+Please make sure the python is not blocked by firewall for Windows. Please refer to https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall/configure#create-an-inbound-program-or-service-rule for deftail.
+
+python album.py 
+You can get your IP address by below command,
+ipconfig
 
 6. Navigate from a cell phone
 Open web browser of a cell phone
